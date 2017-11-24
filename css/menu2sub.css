@@ -6,6 +6,14 @@
   url('https://at.alicdn.com/t/font_407468_6i36l1nzwhzolxr.ttf') format('truetype'),
   url('https://at.alicdn.com/t/font_407468_6i36l1nzwhzolxr.svg#iconfont') format('svg');
 }
+@font-face {
+  font-family: 'iconfont';  /* project id 407468 */
+  src: url('https://at.alicdn.com/t/font_407468_6i36l1nzwhzolxr.eot');
+  src: url('https://at.alicdn.com/t/font_407468_6i36l1nzwhzolxr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_407468_6i36l1nzwhzolxr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_407468_6i36l1nzwhzolxr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_407468_6i36l1nzwhzolxr.svg#iconfont') format('svg');
+}
 .iconfont{
 
     font-family:"iconfont" !important;
@@ -303,3 +311,114 @@ header{
 .foot a:hover{
 	color: #fff;
 }
+
+
+/* 右侧栏开始 */
+.form{
+	width: 170px;
+	height: 349px;
+	background: #fff;
+	border: 1px solid #ccc;
+	position: fixed;
+	right: -170px;
+	top: 100px;
+	overflow: hidden;	
+	transition: all 1s;
+}
+
+.form .from-top{
+	width:170px;
+	height: 34px;
+	background: rgba(0, 0, 0, .8);
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+	padding: 0 10px;
+
+}
+.form .from-top span:nth-child(1){
+	float: left;
+}
+.form .from-top span:nth-child(2){
+	width: 15px;
+	height: 15px;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top:11px;
+	line-height: 12px;
+}
+.form .from-top span:nth-child(2):hover{
+	background:#ccc;
+}
+.form ul{
+	width: 100%;
+	height: 100%;
+	padding: 0 10px;
+
+}
+.form ul li{
+	width: 170px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 5px 0 5px 0;
+}
+.form ul li:nth-child(1) i{
+	color: green;
+}
+.form ul li:nth-child(2) i{
+	color: lightblue;
+}
+.form ul li:nth-child(3) i{
+	color: blue;
+}
+.form ul li:nth-child(4) i{
+	color: deeppink;
+}
+.form ul li:nth-child(5) i{
+	color: yellow;
+}
+.form ul li:nth-child(6) i{
+	color: orange;
+}
+.form ul li:nth-child(7) i{
+	color: lightblue;
+}
+.form ul li:nth-child(8) i{
+	color: hotpink;
+}
+.form ul li:nth-child(9) i{
+	color: blue;
+	font-size: 16px;
+}
+.form .feixiang{
+	width: 25px;
+	height: 108px;
+	position: fixed;
+	background: #333;
+	top: 227px;
+	/* right: 170px; */
+	right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding-left: 2px;
+	padding-top: 5px;
+	transition: all 1s;
+}
+.form .feixiang span:nth-child(1){
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 18px;
+	float: left;
+}
+.form .feixiang span:nth-child(2){
+	width: 25px;
+	height: 25px;
+	background: url('../img/floata_gray3.gif');
+	float: right;
+	background-position: -122px 0;
+}
+

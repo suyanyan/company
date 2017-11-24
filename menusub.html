@@ -42,7 +42,12 @@
 				<div class="content1-l">
 					<div class="content1-l-top">
 						<div class="content1-l-img">
-							<img src="img/t3.jpg" alt="">
+							<ul>
+								<li class="active"><img src="img/222.jpg" alt=""></li>
+								<li><img src="img/444.jpg" alt=""></li>
+								<li><img src="img/333.jpg" alt=""></li>
+							</ul>
+							
 						</div>
 						<div class="content1-l-imgbox">
 							<div class="leftico">
@@ -50,9 +55,9 @@
 							</div>
 							<div class="centerbox">
 								<ul>
-									<li>
+									<!-- <li>
 										<img src="img/t8.png" alt="">
-									</li>
+									</li> -->
 									<li>
 										<img src="img/t2.jpg" alt="">
 									</li>
@@ -110,13 +115,25 @@
 								<div class="color">
 									<ul>
 										<li>
+											<div class="colors">
+												<span>黄色</span>
+												<span class="sanjiao"></span>
+											</div>
 											<img src="img/s1.jpg" alt="" value="黄色">
 
 										</li>
 										<li>
+											<div class="colors">
+												<span>粉色</span>
+												<span class="sanjiao"></span>
+											</div>
 											<img src="img/s2.jpg" alt="">
 										</li>
 										<li>
+											<div class="colors">
+												<span>绿色</span>
+												<span class="sanjiao"></span>
+											</div>
 											<img src="img/s3.jpg" alt="绿色">
 										</li>
 									</ul>
@@ -132,7 +149,12 @@
 							</div>
 							<div class="row4 row5">
 								<span>购买数量：</span>
-								<input type="text" value="1">
+								<div class="jia-jian">
+									<span class="jia">+</span>
+									<input type="text" value="1">
+									<span class="jian">-</span>
+								</div>
+								
 							</div>
 							<div class="anniu">
 								<div class="anniu-l">
@@ -472,6 +494,130 @@
 			</div>
 		</div>
 	</div>
+	<!-- 右侧栏开始 -->
+	<div class="form">
+		<div class="from-top">
+			<span>分享网站</span>
+			<span>x</span>
+		</div>
+		<ul>
+			<li>
+				<i class="iconfont">&#xe659;</i>
+				微信
+			</li>
+			<li>
+				<i class="iconfont">&#xe6d1;</i>
+				复制网址
+			</li>
+			<li>
+				<i class="iconfont">&#xe625;</i>
+				腾讯微博
+			</li>
+			<li>
+				<i class="iconfont">&#xe628;</i>
+				新浪微博
+			</li>
+			<li>
+				<i class="iconfont">&#xe626;</i>
+				QQ空间
+			</li>
+			<li>
+				<i class="iconfont">&#xe83c;</i>
+				豆瓣网
+			</li>
+			<li>
+				<i class="iconfont">&#xe690;</i>
+				开心网
+			</li>
+			<li>
+				<i class="iconfont">&#xe83c;</i>
+				人人网
+			</li>
+			<li>
+				<i class="iconfont">&#xe686;</i>
+				百度贴吧
+			</li>
+		</ul>
+		<div class="feixiang">
+			<span>分享网站</span>
+			<span></span>
+		</div>
+	</div>
+	<!-- 右侧栏结束 -->
 	<!-- 底部栏结束 -->
+
+
+	<!-- 右侧栏开始 -->
+	<div class="form">
+		<div class="from-top">
+			<span>分享网站</span>
+			<span>x</span>
+		</div>
+		<ul>
+			<li>
+				<i class="iconfont">&#xe659;</i>
+				微信
+			</li>
+			<li>
+				<i class="iconfont">&#xe6d1;</i>
+				复制网址
+			</li>
+			<li>
+				<i class="iconfont">&#xe625;</i>
+				腾讯微博
+			</li>
+			<li>
+				<i class="iconfont">&#xe628;</i>
+				新浪微博
+			</li>
+			<li>
+				<i class="iconfont">&#xe626;</i>
+				QQ空间
+			</li>
+			<li>
+				<i class="iconfont">&#xe83c;</i>
+				豆瓣网
+			</li>
+			<li>
+				<i class="iconfont">&#xe690;</i>
+				开心网
+			</li>
+			<li>
+				<i class="iconfont">&#xe83c;</i>
+				人人网
+			</li>
+			<li>
+				<i class="iconfont">&#xe686;</i>
+				百度贴吧
+			</li>
+		</ul>
+		<div class="feixiang">
+			<span>分享网站</span>
+			<span></span>
+		</div>
+	</div>
+	<!-- 右侧栏结束 -->
 </body>
+<script type="text/javascript" src="js/muensub.js"></script>
+<script>
+	let form=document.querySelector(".form");
+	let feixiang=document.querySelector(".feixiang");
+
+	form.onmouseover=function(){
+		form.style.right=0;
+		feixiang.style.right="170px";
+	}
+	feixiang.onmouseover=function(){
+		form.style.right=0;
+		feixiang.style.right="170px";
+	}
+	feixiang.onmouseout=function(){
+		feixiang.style.right="0px";
+		form.style.right="-170px";
+	}
+	form.onmouseout=function(){
+		form.style.right="-170px";
+		feixiang.style.right="0px";
+	}
+</script>
 </html>

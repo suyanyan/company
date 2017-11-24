@@ -43,17 +43,24 @@
 			<div class="btom-row1">
 				<ul>
 					<li>
-					
 						<img src="img/7.png" alt="">
+						<div class="zhezhao">
+						</div>
 					</li>
 					<li>
 						<img src="img/10.png" alt="">
+						<div class="zhezhao">
+						</div>
 					</li>
 					<li>
 						<img src="img/5.png" alt="">
+						<div class="zhezhao">
+						</div>
 					</li>
 					<li>
 						<img src="img/11.png" alt="">
+						<div class="zhezhao">
+						</div>
 					</li>
 
 				</ul>
@@ -61,12 +68,15 @@
 			<div class="btom-row1">
 				<div class="row-img1">
 					<img src="img/4.png" alt="">
+					<div class="zhezhao"></div>
 				</div>
 				<div class="row-im2">
 					<img src="img/13.png" alt="">
+					<div class="zhezhao"></div>
 				</div>
 				<div class="row-im2">
 					<img src="img/14.png" alt="">
+					<div class="zhezhao"></div>
 				</div>
 			</div>
 		</div>
@@ -110,7 +120,7 @@
 			<div class="petfocus-btom-wenzi">
 				<div class="petfocus-btom-wenzi1">
 					<div class="w1">
-						<a href="">如何让猫在固定地点睡觉</a>
+						<a href="#">如何让猫在固定地点睡觉</a>
 						<span>2016-05-18</span>
 					</div>
 					<div class="w2">
@@ -120,7 +130,7 @@
 				</div>
 				<div class="petfocus-btom-wenzi1">
 					<div class="w1">
-						<a href="">如何让猫在固定地点睡觉</a>
+						<a href="#">如何让猫在固定地点睡觉</a>
 						<span>2016-05-18</span>
 					</div>
 					<div class="w2">
@@ -130,7 +140,7 @@
 				</div>
 				<div class="petfocus-btom-wenzi1">
 					<div class="w1">
-						<a href="">如何让猫在固定地点睡觉</a>
+						<a href="#">如何让猫在固定地点睡觉</a>
 						<span>2016-05-18</span>
 					</div>
 					<div class="w2">
@@ -184,5 +194,78 @@
 		</div>
 	</div>
 	<!-- 底部栏结束 -->
+
+	
+	<!-- 右侧栏开始 -->
+	<div class="form">
+		<div class="from-top">
+			<span>分享网站</span>
+			<span>x</span>
+		</div>
+		<ul>
+			<li>
+				<i class="iconfont">&#xe659;</i>
+				微信
+			</li>
+			<li>
+				<i class="iconfont">&#xe6d1;</i>
+				复制网址
+			</li>
+			<li>
+				<i class="iconfont">&#xe625;</i>
+				腾讯微博
+			</li>
+			<li>
+				<i class="iconfont">&#xe628;</i>
+				新浪微博
+			</li>
+			<li>
+				<i class="iconfont">&#xe626;</i>
+				QQ空间
+			</li>
+			<li>
+				<i class="iconfont">&#xe83c;</i>
+				豆瓣网
+			</li>
+			<li>
+				<i class="iconfont">&#xe690;</i>
+				开心网
+			</li>
+			<li>
+				<i class="iconfont">&#xe83c;</i>
+				人人网
+			</li>
+			<li>
+				<i class="iconfont">&#xe686;</i>
+				百度贴吧
+			</li>
+		</ul>
+		<div class="feixiang">
+			<span>分享网站</span>
+			<span></span>
+		</div>
+	</div>
+	<!-- 右侧栏结束 -->
 </body>
+<script>
+	let form=document.querySelector(".form");
+	let feixiang=document.querySelector(".feixiang");
+
+	form.onmouseover=function(){
+		form.style.right=0;
+		feixiang.style.right="170px";
+	}
+	feixiang.onmouseover=function(){
+		form.style.right=0;
+		feixiang.style.right="170px";
+	}
+	feixiang.onmouseout=function(){
+		feixiang.style.right="0px";
+		form.style.right="-170px";
+	}
+	form.onmouseout=function(){
+		form.style.right="-170px";
+		feixiang.style.right="0px";
+	}
+</script>
 </html>
